@@ -8,7 +8,7 @@ namespace XIVComboExpandedPlugin
     /// </summary>
     public enum CustomComboPreset
     {
-        // Last enum used: 110
+        // Last enum used: 114
         // Available: 28,38,45,46
         // ====================================================================================
         #region ASTROLOGIAN
@@ -344,6 +344,26 @@ namespace XIVComboExpandedPlugin
         [OrderedEnum]
         [CustomComboInfo("Verproc into Jolt Plus Opener Feature (Fire)", "Turns Verfire into Verthunder when out of combat.\nRequires Verproc into Jolt Plus.", RDM.JobID, RDM.Verfire)]
         RedMageVerprocOpenerFeatureFire = 94,
+
+        #endregion
+        // ====================================================================================
+        #region REAPER
+
+        [OrderedEnum]
+        [CustomComboInfo("Infernal Slice Combo", "Replace Infernal Slice with its combo chain.", RPR.JobID, RPR.InfernalSlice)]
+        ReaperSliceCombo = 111,
+
+        [OrderedEnum]
+        [CustomComboInfo("Nightmare Scythe Combo", "Replace Nightmare Scythe with its combo chain.", RPR.JobID, RPR.NightmareScythe)]
+        ReaperScytheCombo = 112,
+
+        [OrderedEnum]
+        [CustomComboInfo("Arcane Circle into Harvest", "Replace Arcane Circle with Plentiful Harvest when you have Immortal Sacrifice.", RPR.JobID, RPR.ArcaneCircle)]
+        ReaperHarvestFeature = 113,
+
+        [OrderedEnum]
+        [CustomComboInfo("Enshroud into Communio", "Replace Enshroud with Communio while Enshrouded.", RPR.JobID, RPR.Enshroud)]
+        ReaperCommunioFeature = 114,
 
         #endregion
         // ====================================================================================
